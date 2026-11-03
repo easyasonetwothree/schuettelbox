@@ -1,0 +1,102 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>Schüttelbox – Version 21</title><style>
+*{box-sizing:border-box}html{background:#e8c39c}body{margin:0;min-height:100vh;font-family:ui-rounded,'Arial Rounded MT Bold',system-ui,sans-serif;color:#45301b;background:repeating-linear-gradient(0deg,transparent 0 29px,#a96f3a09 30px 31px,transparent 32px 72px),linear-gradient(115deg,#efd1aa,#e9bf92 55%,#f1d5b1)}main{max-width:980px;margin:0 auto;padding:clamp(14px,3vw,30px) clamp(12px,3vw,28px) 36px;text-align:center}h1{font-size:clamp(20px,3vw,29px);font-weight:650;margin:0 0 12px}.setting{display:inline-flex;align-items:center;justify-content:center;gap:clamp(18px,5vw,52px);padding:9px 16px;border:3px solid #fff4dc;background:linear-gradient(#fff9e9,#fff0d1);border-radius:35px;box-shadow:0 5px 0 #b18b5e,0 9px 18px #65452130;margin:0 auto 16px}.setting button{width:clamp(58px,10vw,83px);height:clamp(58px,10vw,83px);border-radius:26px;border:3px solid #596b26;background:linear-gradient(#d4e398,#b8cd76);font-size:clamp(38px,6vw,56px);line-height:1;color:#3e361a;box-shadow:inset 0 3px 5px #ffffff80,0 3px 3px #635c3440;cursor:pointer}.setting button:disabled{opacity:.35}.setting span{font-size:clamp(54px,9vw,82px);line-height:1;min-width:1.2em;font-weight:600}.prompt{font-size:clamp(17px,2.6vw,24px);font-weight:650;margin:4px 0 14px}.box{transform-origin:50% 50%;will-change:transform}.box.shaking{animation:shakeBox .78s ease-in-out both}.box.shaking .dot{animation:rattleBall .19s ease-in-out infinite alternate}@keyframes shakeBox{0%,100%{transform:translate(0,0) rotate(0)}12%{transform:translate(-9px,-2px) rotate(-2deg)}25%{transform:translate(10px,2px) rotate(2deg)}38%{transform:translate(-12px,0) rotate(-2.5deg)}52%{transform:translate(11px,-2px) rotate(2deg)}66%{transform:translate(-8px,2px) rotate(-1.5deg)}80%{transform:translate(6px,0) rotate(1deg)}}@keyframes rattleBall{from{transform:translate(-3px,2px)}to{transform:translate(4px,-3px)}}@media(prefers-reduced-motion:reduce){.box.shaking,.box.shaking .dot{animation:none}}.box{width:100%;height:clamp(210px,36vw,380px);display:flex;position:relative;padding:clamp(15px,2.5vw,25px);gap:clamp(10px,1.5vw,16px);border-radius:19px;border:solid clamp(13px,2.2vw,23px) #d99c59;background:linear-gradient(130deg,#eec38a,#d7a166 60%,#c68b50);box-shadow:inset 0 5px 4px #fff3d080,inset 0 -5px 5px #8e562c55,0 12px 0 #ad743d,0 20px 22px #66422240}.half{position:relative;flex:1;min-width:0;overflow:hidden;background:linear-gradient(145deg,#f8e3cb,#f0d3b4);box-shadow:inset 0 5px 11px #7d4b2840;border-radius:5px}.half+.half:before{content:'';position:absolute;left:-8px;top:0;bottom:0;width:8px;background:#a96e39}.dots{position:absolute;inset:8%;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:clamp(6px,1.3vw,15px)}.dot{width:clamp(28px,5vw,55px);height:clamp(28px,5vw,55px);border-radius:50%;background:radial-gradient(circle at 32% 25%,#ffb4a0 0%,#e5412a 24%,#b7140b 67%,#760b09 100%);box-shadow:inset -4px -5px 7px #5f090840,inset 2px 2px 4px #fff8,2px 5px 5px #63332155;flex:none}.cover{position:absolute;inset:0;background:linear-gradient(130deg,#a8bc65,#88a34c);border:3px solid #6d8439;border-radius:7px;box-shadow:inset 0 3px 5px #e2f0a480,inset 0 -4px 6px #536d3155;display:flex;align-items:center;justify-content:center;font-size:clamp(54px,10vw,105px);font-weight:500;color:#eff6c9;text-shadow:0 2px 3px #52602b66}.hidden{display:none!important}.answers{display:flex;flex-wrap:wrap;gap:clamp(7px,1.7vw,17px);justify-content:center;margin:27px auto 12px}.answer{min-width:clamp(46px,8vw,82px);height:clamp(56px,9vw,87px);padding:0 10px;border-radius:18px;border:2px solid #e9d3ae;background:linear-gradient(145deg,#fff9e8,#f5e4c4);color:#48331c;font:600 clamp(27px,4.5vw,43px) ui-rounded,system-ui,sans-serif;box-shadow:0 5px 0 #bb9870,0 8px 10px #69431d35;cursor:pointer;touch-action:manipulation}.answer:active,.setting button:active,.next:active{transform:translateY(3px);box-shadow:0 2px 0 #bb9870}.answer:disabled{opacity:.65}.feedback{min-height:66px;display:flex;align-items:center;justify-content:center;font-size:clamp(19px,2.5vw,25px);font-weight:700;margin:14px 0 8px}.correct{color:#32612d}.wrong{color:#9b392a}.next{border:0;border-radius:20px;background:linear-gradient(#83b71b,#4d9407);color:white;font-size:clamp(48px,7vw,68px);font-weight:800;width:clamp(95px,16vw,135px);height:clamp(72px,11vw,100px);padding:0;line-height:1;box-shadow:0 5px 0 #47602a;cursor:pointer;touch-action:manipulation}.thumb{display:inline-flex;align-items:center;justify-content:center;width:clamp(95px,16vw,135px);height:clamp(72px,11vw,100px);border-radius:20px;background:linear-gradient(#fff9e8,#f5e4c4);box-shadow:0 5px 0 #bb9870;color:#298c0a}.thumb svg{width:72%;height:72%;fill:currentColor}.feedback.wrong .thumb{cursor:pointer;touch-action:manipulation;border:0;padding:0;font:inherit}.feedback.wrong .thumb:focus-visible{outline:4px solid #274d91;outline-offset:3px}.success-combined{display:inline-flex;align-items:center;justify-content:center;gap:12px;width:clamp(190px,32vw,292px);height:clamp(72px,11vw,100px);border:0;border-radius:20px;background:linear-gradient(#83b71b,#4d9407);box-shadow:0 5px 0 #47602a;color:white;cursor:pointer;touch-action:manipulation}.success-combined svg{width:clamp(48px,8vw,75px);height:70%;fill:currentColor}.success-combined .arrow{font-size:clamp(48px,7vw,70px);line-height:1}.success-combined:active{transform:translateY(3px);box-shadow:0 2px 0 #47602a}.error-mark{color:#d52d2d}.actions{display:flex;justify-content:center;align-items:center;gap:22px;min-height:100px;margin-top:8px}.feedback:empty{display:none}.feedback.wrong{font-size:clamp(18px,2.4vw,23px)}button:focus-visible{outline:4px solid #274d91;outline-offset:3px}@media(max-width:480px){main{padding-top:12px}h1{margin-bottom:8px}.setting{margin-bottom:10px}.box{height:225px;padding:9px;gap:7px;border-width:11px}.dots{inset:5%;gap:5px}.dot{width:clamp(24px,7vw,35px);height:clamp(24px,7vw,35px)}.answers{margin-top:18px;gap:8px}.answer{min-width:45px;height:56px}}.cover{z-index:2;transform:translateX(0);transition:transform .62s cubic-bezier(.25,.65,.28,1);will-change:transform}.cover.open{transform:translateX(105%)}@media(prefers-reduced-motion:reduce){.cover{transition:none}}@media(orientation:landscape) and (max-height:650px){main{padding-top:8px}h1{display:none}.setting{margin-bottom:8px;padding:5px 12px}.setting button{height:52px;width:58px;font-size:35px}.setting span{font-size:49px}.prompt{margin:0 0 8px}.box{height:205px}.answers{margin-top:16px}.answer{height:55px;min-width:50px;font-size:28px}.feedback{margin:8px 0}}
+
+/* Ein einziger Schiebedeckel: geschlossen / halb offen / offen */
+.box{--inner-pad:clamp(15px,2.5vw,25px)}
+.cover-track{position:absolute;inset:var(--inner-pad);z-index:5;overflow:hidden;border-radius:5px;pointer-events:none}
+.cover{inset:0;width:100%;height:100%;transform:translateX(50%);transition:transform .58s cubic-bezier(.25,.65,.28,1);border-radius:6px;box-shadow:inset 0 3px 5px #e2f0a480,inset 0 -4px 6px #536d3155,-5px 0 9px #38290d35}
+.cover.half{transform:translateX(50%)}
+.cover.closed{transform:translateX(0)}
+.cover.open{transform:translateX(101%)}
+@media(max-width:480px){.box{--inner-pad:9px}}
+@media(prefers-reduced-motion:reduce){.cover{transition:none}}
+
+/* Einmaliger, sanfter Hüpfer nach dem Aufdecken. */
+@keyframes successHop{0%,100%{transform:translateY(0)}35%{transform:translateY(-10px)}65%{transform:translateY(2px)}82%{transform:translateY(-3px)}}
+.success-combined.hop{animation:successHop .42s ease-out 1}
+@media(prefers-reduced-motion:reduce){.success-combined.hop{animation:none}}
+
+/* Version 21: Portrait unverändert. Im Querformat nur maßvolle Anpassungen. */
+html,body{touch-action:pan-x pan-y;overscroll-behavior:none}
+button{touch-action:manipulation}
+@media (orientation:landscape){
+  /* Ausreichend Platz für bis zu zehn Kugeln, auch in einer Kammer. */
+  .box{height:clamp(255px,39vh,345px)}
+  .dots{gap:clamp(6px,1.1vw,12px)}
+  .dot{width:clamp(29px,4.3vw,46px);height:clamp(29px,4.3vw,46px)}
+  /* Gewohnter Abstand zur Box bleibt bestehen. */
+  .answers{margin-top:27px;gap:clamp(7px,1.4vw,14px)}
+  .answer{min-width:clamp(46px,7vw,72px);height:clamp(52px,7.5vw,76px);font-size:clamp(27px,3.7vw,38px)}
+  .setting{padding:7px 14px;margin-bottom:12px;gap:clamp(16px,4vw,42px)}
+  .setting button{width:clamp(52px,7vw,72px);height:clamp(52px,7vw,72px);font-size:clamp(34px,4.7vw,49px)}
+  .setting span{font-size:clamp(47px,6.7vw,70px)}
+}
+@media (orientation:landscape) and (max-height:650px){
+  main{padding-top:8px}
+  h1{display:none}
+  .setting{padding:6px 12px;margin-bottom:11px}
+  .setting button{width:54px;height:54px;font-size:36px}
+  .setting span{font-size:49px}
+  .box{height:clamp(235px,43vh,275px)}
+  .answers{margin-top:25px}
+  .answer{height:58px;min-width:49px;font-size:29px}
+  .actions{min-height:75px;margin-top:5px}
+  .feedback{margin:6px 0}
+  .success-combined,.thumb{height:72px}
+}
+
+/* Version 22: Rückmeldefelder im Querformat passend zu den Zahlentasten skalieren. */
+@media (orientation:landscape){
+  .success-combined{width:clamp(164px,27vw,248px);height:clamp(60px,8vw,82px);border-radius:17px;gap:9px}
+  .success-combined svg{width:clamp(41px,6vw,61px);height:68%}
+  .success-combined .arrow{font-size:clamp(39px,5.5vw,57px)}
+  .thumb{width:clamp(75px,11vw,108px);height:clamp(60px,8vw,82px);border-radius:17px}
+  .next{width:clamp(75px,11vw,108px);height:clamp(60px,8vw,82px)}
+  .actions{min-height:clamp(70px,10vw,92px)}
+  .feedback{min-height:0;margin:7px 0 5px}
+}
+@media (orientation:landscape) and (max-height:650px){
+  .success-combined{width:175px;height:60px}
+  .thumb,.next{width:85px;height:60px}
+  .success-combined svg{width:45px}
+  .success-combined .arrow{font-size:43px}
+  .actions{min-height:68px}
+  .feedback{margin:4px 0}
+}
+</style></head><body><main><h1>Schüttelbox</h1><div class="setting" aria-label="Gesamtzahl der Kugeln"><button type="button" id="minus" aria-label="Eine Kugel weniger">−</button><span id="count">5</span><button type="button" id="plus" aria-label="Eine Kugel mehr">+</button></div><div class="box" id="box" role="group" aria-label="Schüttelbox mit zwei Kammern"><div class="half"><div class="dots" id="left"></div></div><div class="half"><div class="dots" id="right"></div></div><div class="cover-track"><div class="cover" id="cover" aria-label="Verdeckte Kugeln"></div></div></div><div class="answers" id="answers" aria-label="Wähle die Anzahl der versteckten Kugeln"></div><div class="actions"><div class="feedback" id="feedback" aria-live="polite"></div></div></main><script>
+(function(){'use strict';
+let total=5,visible=0,solved=false,previous=-1,busy=false,sequence=0;
+const $=id=>document.getElementById(id);
+const cover=$('cover'), box=$('box'), feedback=$('feedback');
+const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const pause=ms=>new Promise(resolve=>setTimeout(resolve,reduced?25:ms));
+function setCover(state){cover.classList.remove('closed','half','open');cover.classList.add(state)}
+function newNumbers(){let choices=[];for(let i=0;i<=total;i++)if(i!==previous)choices.push(i);visible=choices[Math.floor(Math.random()*choices.length)];previous=visible;solved=false;feedback.replaceChildren();feedback.className='feedback';render()}
+function render(){
+ $('count').textContent=total;$('minus').disabled=busy||total===1;$('plus').disabled=busy||total===10;
+ for(const [id,n] of [['left',visible],['right',total-visible]]){const holder=$(id);holder.replaceChildren();for(let i=0;i<n;i++){const dot=document.createElement('span');dot.className='dot';holder.appendChild(dot)}}
+ const answers=$('answers');answers.replaceChildren();for(let n=0;n<=total;n++){const b=document.createElement('button');b.type='button';b.className='answer';b.textContent=n;b.disabled=solved||busy;b.setAttribute('aria-label',n+' Kugeln');b.addEventListener('click',()=>check(n));answers.appendChild(b)}
+}
+function check(n){if(solved||busy)return;
+ if(n===total-visible){solved=true;setCover('open');feedback.innerHTML='<button type="button" class="success-combined" aria-label="Richtig! Nächste Aufgabe"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 27h10v31H10a5 5 0 0 1-5-5V32a5 5 0 0 1 5-5zm15 0 13-21c2-4 8-3 8 2v14h10c6 0 9 5 7 11l-7 21c-1 3-4 4-7 4H25z"/></svg><span class="arrow" aria-hidden="true">➜</span></button>';feedback.className='feedback correct';feedback.querySelector('button').addEventListener('click',next);render();
+ // Der Deckel öffnet sich zuerst; danach hüpft der Button genau einmal.
+ const successButton=feedback.querySelector('.success-combined');
+ setTimeout(()=>{if(successButton.isConnected && solved && !busy)successButton.classList.add('hop')},reduced?0:650)}
+ else{feedback.innerHTML='<button type="button" class="thumb error-mark" aria-label="Kreuz ausblenden und erneut versuchen"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M16 10 32 26 48 10 54 16 38 32 54 48 48 54 32 38 16 54 10 48 26 32 10 16Z"/></svg></button>';feedback.className='feedback wrong';feedback.querySelector('button').addEventListener('click',()=>{feedback.replaceChildren();feedback.className='feedback'})}
+}
+async function next(){if(busy||!solved)return;busy=true;render();feedback.replaceChildren();const token=++sequence;
+ // Offene Box erst vollständig verschließen.
+ setCover('closed');await pause(650);if(token!==sequence)return;
+ // Erst mit geschlossenem Deckel schütteln.
+ box.classList.add('shaking');await pause(800);box.classList.remove('shaking');if(token!==sequence)return;
+ // Kugeln unter geschlossenem Deckel neu verteilen.
+ newNumbers();await pause(120);if(token!==sequence)return;
+ // Den Deckel halb öffnen: Nur die linke Kammer wird sichtbar.
+ setCover('half');await pause(620);if(token!==sequence)return;
+ busy=false;render();
+}
+function changeTotal(delta){if(busy)return;const nextTotal=Math.max(1,Math.min(10,total+delta));if(nextTotal===total)return;total=nextTotal;previous=-1;setCover('half');newNumbers()}
+$('minus').addEventListener('click',()=>changeTotal(-1));$('plus').addEventListener('click',()=>changeTotal(1));
+setCover('half');newNumbers();
+})();
+</script></body></html>
